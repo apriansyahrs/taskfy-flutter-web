@@ -1,19 +1,7 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
   <base href="/">
 
   <meta charset="UTF-8">
@@ -27,12 +15,52 @@
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="favicon.png" />
 
   <title>taskfy</title>
   <link rel="manifest" href="manifest.json">
 </head>
+
 <body>
+
+  <script>
+    window.addEventListener('load', async function (ev) {
+      // Dynamically load Firebase SDKs
+      const firebaseApp = await import("https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js");
+      const firebaseAuth = await import("https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js");
+      const firebaseFirestore = await import("https://www.gstatic.com/firebasejs/11.3.1/firebase-firestore.js");
+
+      // Ensure Firebase is loaded correctly
+      if (!firebaseApp || !firebaseAuth || !firebaseFirestore) {
+        console.error('Failed to load Firebase SDKs.');
+        return;
+      }
+
+      // Initialize Firebase after loading the SDKs
+      const firebaseConfig = {
+        apiKey: "AIzaSyAyHakzeMi2OhTTGse5jca7PLNbSyfE9yQ",
+        authDomain: "pandu-5b893.firebaseapp.com",
+        projectId: "pandu-5b893",
+        storageBucket: "pandu-5b893.appspot.com",
+        messagingSenderId: "1007211190273",
+        appId: "1:1007211190273:web:b7121ec7996a9a1b378800"
+      };
+
+      const app = firebaseApp.initializeApp(firebaseConfig);
+
+      const db = firebaseFirestore.getFirestore(app);
+      const auth = firebaseAuth.getAuth(app);
+
+      // Proceed to load Flutter app after Firebase initialization
+      _flutter.loader.loadEntrypoint().then(function (engineInitializer) {
+        return engineInitializer.initializeEngine();
+      }).then(function (appRunner) {
+        return appRunner.runApp();
+      });
+    });
+  </script>
+
   <script src="flutter_bootstrap.js" async></script>
 </body>
+
 </html>
