@@ -109437,7 +109437,7 @@ A.yJ.prototype={
 fU(a){var s=0,r=A.D(t.H),q=this,p
 var $async$fU=A.x(function(b,c){if(b===1)return A.A(c,r)
 while(true)switch(s){case 0:s=2
-return A.t(A.azH("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNza2d4cHZ5aGR2bHBob3lyYmZ0Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTczOTcwMjExMiwiZXhwIjoyMDU1Mjc4MTEyfQ.g_LKqO5rzqVX156XyY0u-9bumbnqTGIQD4-nut-K34g","https://sskgxpvyhdvlphoyrbft.supabase.co"),$async$fU)
+return A.t(A.azH("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNza2d4cHZ5aGR2bHBob3lyYmZ0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzk3MDIxMTIsImV4cCI6MjA1NTI3ODExMn0.bueTQnA3LoMDnQGnA3nr2vCtQeeta18nnGvjXr-vVo4","https://sskgxpvyhdvlphoyrbft.supabase.co"),$async$fU)
 case 2:p=$.lD().b
 p===$&&A.b()
 q.a!==$&&A.bm()
