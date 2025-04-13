@@ -92,5 +92,6 @@
     "addTaskButton": "Add Task",
     "createTaskTitle": "Create New Task",
     "dailyTasksTitle": "Daily Tasks",
-    "projectTasksTitle": "Project Tasks"
+    "projectTasksTitle": "Project Tasks",
+    "closeButton": "X"
 }

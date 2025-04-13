@@ -97,5 +97,6 @@
     "invalidEmail": "Email tidak valid",
     "passwordRequired": "Kata sandi diperlukan",
     "passwordTooShort": "Kata sandi terlalu pendek",
-    "forgotPasswordButton": "Lupa Kata Sandi?"
+    "forgotPasswordButton": "Lupa Kata Sandi?",
+    "closeButton": "X"
 }
